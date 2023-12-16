@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>SUPER-VUJA</title>
+</head>
+<body>
+    <canvas id="canv"></canvas>
+    <div id="buttons">
+        <button class="button-53" role="button" id="leftButton" style="color: white;"><-</button>
+        <button class="button-53" role="button" id="shootButton" style="background-color: #e73d3d; color: white;">PUC</button>
+        <button class="button-53" role="button" id="rightButton" style="color: white;">-></button>
+    </div>
+ <!-- Welcome popup -->
+  <div id="welcomePopup">
+    <h2>SUPER-VUJA</h2>
+    <h5 style="text-align: left; font-size: medium;">Dobrodošli u SUPER-VUJA igricu.<br><br> - Vuja je imala noćnu moru i njeni prijatelji su postali dušmani. <br><br> - Bori se protiv njihovih supermoći i pomozi Vuji da se probudi.</h5>
+    <button class="button-53" role="button" onclick="startGame()" style="background-color: #223971; color: white;">Počni</button>
+    <button class="button-53" role="button" onclick="showLegend()" style="background-color: #FFC906; margin-top: 5%;">Dušmani</button>
+  </div>
+
+  <!-- Legend popup -->
+  <div id="legendPopup">
+  <h2>Dušmani</h2>
+  <div id="legendImages"></div>
+  <button class="button-53" role="button" onclick="closeLegend()" style="background-color: #cb2026;">Zatvori</button>
+</div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>

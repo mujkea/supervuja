@@ -17,7 +17,7 @@ let gameState = 'playing';
 let bullets = [];
 let enemies = [];
 
-localStorage.getItem('score')
+localStorage.setItem('score', 0)
 
 const playerBulletImage = new Image();
 playerBulletImage.src = 'vuja_bullet.png'; 

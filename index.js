@@ -3,7 +3,7 @@ const ctx = canv.getContext("2d");
 canv.width = window.innerWidth;
 canv.height = window.innerHeight - 40; 
 
-let score = 0;
+let score = parseInt(localStorage.getItem('score')) || 0;
 
 let isMovingLeft = false;
 let isMovingRight = false;

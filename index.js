@@ -17,6 +17,8 @@ let gameState = 'playing';
 let bullets = [];
 let enemies = [];
 
+localStorage.getItem('score')
+
 const playerBulletImage = new Image();
 playerBulletImage.src = 'vuja_bullet.png'; 
 
@@ -345,7 +347,6 @@ function move() {
         player.x = canv.width - player.radius;
       }
     }
-
 
     moveBullets(elapsed);
 

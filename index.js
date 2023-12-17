@@ -22,7 +22,7 @@ playerBulletImage.src = 'vuja_bullet.png';
 
 const player = {
   x: canv.width / 2, 
-  y: canv.height - 90, 
+  y: canv.height - 110, 
   radius: 19, 
   speed: 5, 
   image: new Image()

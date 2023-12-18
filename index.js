@@ -5,6 +5,10 @@ canv.height = window.innerHeight - 40;
 
 let score = 0;
 
+if (localStorage.getItem('score') === 'null'){
+  localStorage.setItem('score', 0)
+}
+
 let isMovingLeft = false;
 let isMovingRight = false;
 

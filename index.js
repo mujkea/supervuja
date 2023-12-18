@@ -243,6 +243,7 @@ function draw() {
 
     requestAnimationFrame(draw);
   } else if (gameState === 'gameOver') {
+    disableButtons()
     ctx.clearRect(0, 0, canv.width, canv.height);
 
     // Save the score in localStorage if it's a new high score
@@ -275,6 +276,7 @@ function draw() {
 
   canv.addEventListener('click', restartGame);
 } else {
+      disableButtons()
 
         ctx.clearRect(0, 0, canv.width, canv.height);
         ctx.fillStyle = '#000';
@@ -396,6 +398,11 @@ function generateRandomEnemy() {
 function showWelcomePopup() {
     disableButtons()
       document.getElementById('welcomePopup').style.display = 'block';
+       if (localStorage.getItem('score') != null) {
+        document.getElementById('highscore').innerHTML = 'Highscore: ' + parseInt(localStorage.getItem('score'));
+       } else {
+         document.getElementById('highscore').innerHTML = 'Highscore: 0';
+       }
     }
 
     function hideWelcomePopup() {

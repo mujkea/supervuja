@@ -414,15 +414,15 @@ function showWelcomePopup() {
   legendPopup.innerHTML = '<h2>Dušmani</h2> \n <hr>';
   
   const enemyDescriptions = {
-    'neira.png': 'Opasna daska - ako te udari ostaneš bez krova nad glavom.',
+    'neira.png': 'Opasna daska - ako te zakači, fraktura lakta zagarantovana al\' imaš ljude u vojnoj.',
     'elko.png': 'Brzi kawasaki - od prebrze vožnje umreš od straha!',
-    'sara.png': 'Zarazni mikroskop - ako te udari fasuješ neotkrivenu bolescugu.',
-    'amar.png': 'Siromasni laptop - ako te udari ostanes bez para eventualno izazove kratki spoj.',
-    'ada.png': 'Leteca diploma - nikad ne zavrsis fakultet i umres od gladi.',
-    'samira.png': 'Vjesto klupko - isplete ti dzemper, umres od vrucine.',
-    'novo.png': 'Sampionski joystick - ubije te u fifi, sam se bacis.',
-    'nejla.png': 'Precizni uglomjer - projektuje ti smrt pod savrsenim uglom.',
-    'limo.png': 'LV torbica - torbicom ga fuade.'
+    'sara.png': 'Zarazni mikroskop - ako te udari fasuješ neotkrivenu bolešćugu.',
+    'amar.png': 'Siromašni laptop - ako te pogodi ostaneš bez para eventualno izazove kratki spoj.',
+    'ada.png': 'Leteća diploma - regrutuje Muju da te pošalje za Kanadu.',
+    'samira.png': 'Vješto klupko - isplete ti džemper, umreš od vrućine.',
+    'novo.png': 'Šampionski joystick - primiš joystick u sljepočnicu, još mu nabaviš novi.',
+    'nejla.png': 'Precizni uglomjer - projektuje ti smrt pod savršenim uglom.',
+    'limo.png': 'LV torbica - torbicom ga Fuade.'
   };
 
   for (const enemyImage in enemyDescriptions) {

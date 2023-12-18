@@ -27,7 +27,7 @@ playerBulletImage.src = 'vuja_bullet.png';
 
 const player = {
   x: canv.width / 2, 
-  y: canv.height - 110, 
+  y: canv.height - 100, 
   radius: 19, 
   speed: 5, 
   image: new Image()
@@ -261,21 +261,21 @@ function draw() {
     ctx.fillStyle = '#000';
     ctx.font = '20px Arial';
     const gameOverTextHS = 'Osvojili ste redbull Vuja edition';
-    ctx.fillText(gameOverTextHS, canv.width / 2 - ctx.measureText(gameOverTextHS).width / 2, canv.height / 2 - 90);
+    ctx.fillText(gameOverTextHS, canv.width / 2 - ctx.measureText(gameOverTextHS).width / 2, canv.height / 2 - 130);
 
     ctx.font = '15px Arial';
     const scoreTextHS = 'Novi skor: ' + score;
-    ctx.fillText(scoreTextHS, canv.width / 2 - ctx.measureText(scoreTextHS).width / 2, canv.height / 2 -70);
+    ctx.fillText(scoreTextHS, canv.width / 2 - ctx.measureText(scoreTextHS).width / 2, canv.height / 2 -110);
 
     ctx.font = '15px Arial';
     const restartText = 'Pritisni bilo gdje da ponovo igraš'
-    ctx.fillText(restartText, canv.width / 2 - ctx.measureText(restartText).width / 2, canv.height / 2 - 30);
+    ctx.fillText(restartText, canv.width / 2 - ctx.measureText(restartText).width / 2, canv.height / 2 - 70);
 
     const imageURL = 'rb.png';
     const image = new Image();
     image.src = imageURL;
     image.onload = function () {
-        ctx.drawImage(image, canv.width / 2 - 50, canv.height / 2 + 5, 100, 240);
+        ctx.drawImage(image, canv.width / 2 - 50, canv.height / 2 - 25, 100, 240);
     };
 
   canv.addEventListener('click', restartGame);

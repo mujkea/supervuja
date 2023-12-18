@@ -243,7 +243,6 @@ function draw() {
 
     requestAnimationFrame(draw);
   } else if (gameState === 'gameOver') {
-    disableButtons()
     ctx.clearRect(0, 0, canv.width, canv.height);
 
     // Save the score in localStorage if it's a new high score
@@ -276,8 +275,7 @@ function draw() {
 
   canv.addEventListener('click', restartGame);
 } else {
-      disableButtons()
-
+      
         ctx.clearRect(0, 0, canv.width, canv.height);
         ctx.fillStyle = '#000';
         ctx.font = '30px Arial';
